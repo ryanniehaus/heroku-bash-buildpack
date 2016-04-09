@@ -28,6 +28,12 @@ do
   ls -la "$each"
 done
 
+if [ ! -d "$2" ]
+then
+  mkdir -v "$2"
+fi
+
+export TEMP_APP_DIR=/tmp
   env_dir="$3"
   whitelist_regex=${2:-''}
   blacklist_regex=${3:-''}
@@ -40,6 +46,5 @@ done
       :
     done
   fi
-  export TEMP_APP_DIR=/tmp
 exit 0
 
