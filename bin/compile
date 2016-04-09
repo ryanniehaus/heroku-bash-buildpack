@@ -3,6 +3,12 @@
 
 echo "-----> Running bin/compile (passed BUILD_DIR=$1, CACHE_DIR=$2, ENV_DIR=$3)"
 export
+
+if [ ! -d "$2" ]
+then
+  mkdir -v "$2"
+fi
+
 echo in dir `pwd`
 for each in $(find . -type d)
 do
@@ -27,11 +33,6 @@ do
   echo DIR "$each"
   ls -la "$each"
 done
-
-if [ ! -d "$2" ]
-then
-  mkdir -v "$2"
-fi
 
 export TEMP_APP_DIR=/tmp
   env_dir="$3"
