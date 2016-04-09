@@ -3,8 +3,8 @@
 cat << EOF
 ---
 addons:
-  - scheduler:standard
-  - cloudinary:starter
+  - scheduler
+  - cloudinary
 default_process_types:
   program: bin/program
 EOF
