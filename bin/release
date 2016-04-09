@@ -4,6 +4,7 @@ cat << EOF
 ---
 addons:
   - heroku-scheduler
+  - cloudinary:starter
 default_process_types:
   program: bin/program
 EOF
