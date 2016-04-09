@@ -2,5 +2,30 @@
 # bin/compile BUILD_DIR CACHE_DIR ENV_DIR
 
 echo "-----> Running bin/compile (passed BUILD_DIR=$1, CACHE_DIR=$2, ENV_DIR=$3)"
+export
+echo in dir `pwd`
+for each in $(find . -type d)
+do
+  echo DIR "$each"
+  ls -la "$each"
+done
+echo in dir "$1"
+for each in $(find "$1" -type d)
+do
+  echo DIR "$each"
+  ls -la "$each"
+done
+echo in dir "$2"
+for each in $(find "$2" -type d)
+do
+  echo DIR "$each"
+  ls -la "$each"
+done
+echo in dir "$3"
+for each in $(find "$3" -type d)
+do
+  echo DIR "$each"
+  ls -la "$each"
+done
 exit 0
 
