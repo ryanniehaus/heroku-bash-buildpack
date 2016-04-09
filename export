@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "-----> Running export for heroku-bash-buildpack"
+echo "-----> FINISHED Running export for heroku-bash-buildpack"
+
