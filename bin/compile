@@ -40,5 +40,6 @@ done
       :
     done
   fi
+  export TEMP_APP_DIR=/tmp
 exit 0
 
