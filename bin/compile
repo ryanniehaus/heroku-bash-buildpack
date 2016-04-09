@@ -40,6 +40,7 @@ done
   if [ -d "$env_dir" ]; then
     echo exporting variables from $env_dir
 		echo /tmp > "$3"/TEMP_APP_DIR
+		ls -la "$3"
 		#export TEMP_APP_DIR=/tmp
     for e in $(ls $env_dir); do
     	# | grep -qvE "$blacklist_regex"
