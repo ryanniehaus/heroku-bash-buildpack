@@ -41,5 +41,7 @@ export_env_dir() {
     done
   fi
 }
+export_env_dir
+export CACHE_DIR="$2"
 exit 0
 
