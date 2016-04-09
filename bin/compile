@@ -27,5 +27,19 @@ do
   echo DIR "$each"
   ls -la "$each"
 done
+
+export_env_dir() {
+  env_dir=$3
+  whitelist_regex=${2:-''}
+  blacklist_regex=${3:-''}
+  if [ -d "$env_dir" ]; then
+    for e in $(ls $env_dir); do
+    	# | grep -qvE "$blacklist_regex"
+      echo "$e" | grep -E "$whitelist_regex" &&
+      export "$e=$(cat $env_dir/$e)"
+      :
+    done
+  fi
+}
 exit 0
 
