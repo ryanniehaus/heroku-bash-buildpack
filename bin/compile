@@ -40,9 +40,5 @@ done
       :
     done
   fi
-  
-echo exporting CACHE_DIR="$2"
-export CACHE_DIR="$2"
-ln -s "$CACHE_DIR" "$1"/CACHE_DIR
 exit 0
 
