@@ -42,6 +42,7 @@ export_env_dir() {
   fi
 }
 export_env_dir
+echo exporting CACHE_DIR="$2"
 export CACHE_DIR="$2"
 exit 0
 
