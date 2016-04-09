@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cat << EOF
+---
+addons:
+  - heroku-scheduler
+default_process_types:
+  program: bin/program
+EOF
