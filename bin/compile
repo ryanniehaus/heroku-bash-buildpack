@@ -10,25 +10,25 @@ then
 fi
 
 echo in dir `pwd`
-for each in $(find . -type d | grep -vE "/.git$")
+for each in $(find . -type d | grep -vE "/.git$" | grep -vE "/.git/")
 do
   echo DIR "$each"
   ls -la "$each"
 done
 echo in dir "$1"
-for each in $(find "$1" -type d | grep -vE "/.git$")
+for each in $(find "$1" -type d | grep -vE "/.git$" | grep -vE "/.git/")
 do
   echo DIR "$each"
   ls -la "$each"
 done
 echo in dir "$2"
-for each in $(find "$2" -type d | grep -vE "/.git$")
+for each in $(find "$2" -type d | grep -vE "/.git$" | grep -vE "/.git/")
 do
   echo DIR "$each"
   ls -la "$each"
 done
 echo in dir "$3"
-for each in $(find "$3" -type d | grep -vE "/.git$")
+for each in $(find "$3" -type d | grep -vE "/.git$" | grep -vE "/.git/")
 do
   echo DIR "$each"
   ls -la "$each"
