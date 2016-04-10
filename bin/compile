@@ -35,6 +35,9 @@ do
 done
 
 cp -rvf .profile.d "$1"/.profile.d
+chmod ug+rx "$1"/.profile.d/*
+
+export PATH="/app/bin:$PATH"
 
 exit 0
 
