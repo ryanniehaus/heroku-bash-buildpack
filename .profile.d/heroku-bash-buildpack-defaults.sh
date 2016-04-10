@@ -2,6 +2,7 @@
 
 echo "-----> Executing .profile.d/heroku-bash-buildpack-defaults.sh"
 #extra buildpack configuration goes here
+export PATH="/app/bin:$PATH"
 export myTESTDIR_INBUILDPACK_DEFAULTS=BLAH
 echo "-----> FINISHED Executing .profile.d/heroku-bash-buildpack-defaults.sh"
 

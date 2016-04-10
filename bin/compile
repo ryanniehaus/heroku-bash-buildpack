@@ -34,5 +34,7 @@ do
   ls -la "$each"
 done
 
+cp -rvf .profile.d "$1"/.profile.d
+
 exit 0
 
