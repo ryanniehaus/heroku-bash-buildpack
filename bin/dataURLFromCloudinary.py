@@ -10,7 +10,7 @@ if(len(sys.argv) != 2):
 	exit(1)
 
 url, other =cloudinary.utils.cloudinary_url(str(sys.argv[1]),  resource_type = "raw")
-print url
+print(url)
 
 exit(0)
 
