@@ -11,7 +11,6 @@ if(len(sys.argv) != 2):
 
 url, other =cloudinary.utils.cloudinary_url(str(sys.argv[1]),  resource_type = "raw")
 print url
-#str(sys.argv[1]), public_id = str(sys.argv[2]),  resource_type = "raw")
 
 exit(0)
 
