@@ -9,6 +9,6 @@ if(len(sys.argv) != 3):
 	print('Requires the local path to the file and the remote path to the file')
 	exit(1)
 
-cloudinary.uploader.upload(str(sys.argv[1]), public_id = str(sys.argv[2]),  resource_type = "raw")
+cloudinary.uploader.upload(str(sys.argv[1]), public_id = str(sys.argv[2]),  resource_type = "raw", invalidate = True)
 
 exit(0)
